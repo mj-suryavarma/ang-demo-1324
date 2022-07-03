@@ -1,0 +1,24 @@
+<p>landing-page works!</p>
+
+<ul *ngFor="let hotel of hotels" >
+    <li>
+        {{hotel.name}}
+        <div>{{hotel.year}}</div>
+        <div>{{hotel.location}}</div>
+        <div>{{hotel.availableRooms}}</div>
+        <div>
+            {{hotel.description}}
+        </div>
+        <a
+          [title]="hotel.name"
+          href="hotel.name"
+          (click)="share()"
+        > Share with Your Friends
+        </a>
+       <button 
+       (click)="Booknow()"
+       >Book Now!</button>
+    </li>
+
+
+</ul>
